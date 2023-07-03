@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/marketbooktest?createDatabaseIfNotExist=true&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jackson:
+    default-property-inclusion: non_null
+
+jwt:
+  secret: 63040867-d727-4250-8d0a-5c1116c3facc
+  expiration: 999999
